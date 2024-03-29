@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<nav id="navbar">
+<header><h1>Python</h1></header>
+<ul>
+<li>
+<a class="nav-link" href="#getting_started_with_python">Getting Started with Python</a>
+</li>
+<li>
+<a class="nav-link" href="#python_basics">Python Basics</a>
+</li>
+<li>
+<a class="nav-link" href="#flow_of_control">Flow of Control</a>
+</li>
+<li>
+<a class="nav-link" href="#functions">Functions</a>
+</li>
+<li>
+<a class="nav-link" href="#strings">Strings</a>
+</li>
+</ul>
+</nav>
+    <main id="main-doc">
+        <section class="main-section" id="getting_started_with_python">
+            <header><h2>Getting Started with Python</h2></header>
+        </section>
+        <section class="sub-section">
+            <ul>
+                <li>Python is a high level language. It is an interpreted language, as Python programs are executed by
+                    an interpreter. The
+                    interpreter is also called Python shell.</li>
+                <li>Python programs are easy to understand as
+                    they have a clearly defined syntax and relatively
+                    simple structure.</li>
+                <li>Python is also helpful in web development. Many
+                    popular web services and applications are built
+                    using Python.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="python_basics">
+            <header><h2>Python Basics</h2></header>
+            <section class="sub-section">
+                <section class="topic">
+                    <h3>Keywords</h3>
+                    <p>Keywords are reserved words. Each keyword has a
+                        specific meaning to the Python interpreter, and we can
+                        use a keyword in our program only for the purpose for
+                        which it has been defined. As Python is case sensitive,
+                        keywords must be written exactly as shown below: </p>
+                    <table class="keyword-table">
+                        <caption>Python Keywords</caption>
+                        <tr>
+                            <td>False</td>
+                            <td>class</td>
+                            <td>finally</td>
+                            <td>is</td>
+                            <td>return</td>
+                        </tr>
+                        <tr>
+                            <td>None</td>
+                            <td>continue</td>
+                            <td>for</td>
+                            <td>lambda</td>
+                            <td>try</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>def</td>
+                            <td>from</td>
+                            <td>nonlocal</td>
+                            <td>while</td>
+                        </tr>
+                        <tr>
+                            <td>and</td>
+                            <td>del</td>
+                            <td>global</td>
+                            <td>not</td>
+                            <td>with</td>
+                        </tr>
+                        <tr>
+                            <td>as</td>
+                            <td>elif</td>
+                            <td>if</td>
+                            <td>or</td>
+                            <td>yeild</td>
+                        </tr>
+                        <tr>
+                            <td>assert</td>
+                            <td>else</td>
+                            <td>import</td>
+                            <td>pass</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>break</td>
+                            <td>except</td>
+                            <td>in</td>
+                            <td>raise</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="topic">
+                    <h3>Identifiers</h3>
+                    In programming languages, identifiers are names used
+                    to identify a variable, function, or other entities in a
+                    program. The rules for naming an identifier in Python
+                    are as follows:
+                    <ul>
+                        <li>The name should begin with an uppercase or a
+                            lowercase alphabet or an underscore sign (_). This
+                            may be followed by any combination of characters
+                            a–z, A–Z, 0–9 or underscore (_). Thus, an identifier
+                            cannot start with a digit.</li>
+                        <li>It can be of any length. (However, it is preferred to
+                            keep it short and meaningful).</li>
+                        <li>It should not be a keyword or reserved word given
+                            in Table 5.1.</li>
+                        <li>We cannot use special symbols like !, @, #, $, %,
+                            etc., in identifiers.</li>
+                    </ul>
+                </section>
+                <section class="topic">
+                    <h3>Variables</h3>
+                    <p>Variable in Python refers to an object — an
+                        item or element that is stored in the memory. Value
+                        of a variable can be a string (e.g., ‘b’, ‘Global Citizen’),
+                        numeric (e.g., 345) or any combination of alphanumeric
+                        characters (CD67). In Python we can use an assignment
+                        statement to create new variables and assign specific
+                        values to them.
+                    </p>
+                    <section class="example">
+                        <p>Below are some examples:</p>
+                        <pre>
+                        gender = 'M'
+                        message = "Keep Smiling"
+                        price = 987.9
+                        </pre>
+                    </section>
+                </section>
+
+            </section>
+        </section>
+        <section class="main-section" id="flow_of_control">
+            <header><h2>Flow of Control</h2></header>
+            <p>The order of execution of the statements in a program
+                is known as flow of control. The flow of control can be
+                implemented using control structures.
+            <section class="sub-topic">
+                <h4>If Else Statement</h4>
+                In programming, this
+                concept of decision making or
+                selection is implemented with the
+                help of if..else statement. The syntax of if statement is:</p>
+                <div class="syntax">
+                    <pre>
+if condition:
+ statement(s)
+else:
+ statement(s)</pre>
+                    <p>Let's see a code in action</p>
+                    <div class="code">
+                        <pre>
+<code>
+age = int(input("Enter your age: "))
+if age >= 18:
+ print("Eligible to vote")
+else:
+ print("Not eligible to vote"
+ </code>
+ </pre>
+                    </div>
+                    <p> In the above code, if the age entered by the
+                        user is greater than 18, then print that the user is
+                        eligible to vote. If the condition is true, then the indented
+                        statement(s) are executed. The indentation implies that
+                        its execution is dependent on the condition.</p>
+                </div>
+            </section>
+            <section class="sub-topic">
+                <h4>For Loop</h4>
+                <p>The for statement is used to iterate over a range of
+                    values or a sequence. The for loop is executed for each
+                    of the items in the range. With every iteration of the loop, the
+                    control variable checks whether each
+                    of the values in the range have been
+                    traversed or not. When all the items in
+                    the range are exhausted, the statements
+                    within loop are not executed; the control
+                    is then transferred to the statement
+                    immediately following the for loop. </p>
+                <div class="syntax">
+                    Syntax of the for loop is:
+                    <pre>
+for (control-variable) in (sequence/items in range):
+    (statements inside body of the loop)
+</pre>
+                </div>
+                <div class="code">
+                    <p>Lets understand it with the help of a code.</p>
+                    <pre>
+#Print even numbers in the given sequence
+<code>
+numbers = [1,2,3,4,5,6,7,8,9,10]
+for num in numbers:
+ if (num % 2) == 0:
+ print(num,'is an even Number')
+</code>
+ Output:
+2 is an even Number
+4 is an even Number
+6 is an even Number
+8 is an even Number
+10 is an even Number
+
+</pre>
+                </div>
+            </section>
+            <section class="sub-topic">
+                <h4>While loop</h4>
+                <p>The while statement executes a block of code repeatedly
+                    as long as the control condition of the loop is true. The
+                    control condition of the while
+                    loop is executed before any
+                    statement inside the loop is
+                    executed. After each iteration,
+                    the control condition is tested
+                    again and the loop continues as
+                    long as the condition remains
+                    true. When this condition becomes
+                    false, the statements in the body
+                    of loop are not executed and the
+                    control is transferred to the
+                    statement immediately following
+                    the body of while loop. If the
+                    condition of the while loop is
+                    initially false, the body is not
+                    executed even once.</p>
+                <p>The statements within the
+                    body of the while loop must
+                    ensure that the condition
+                    eventually becomes false; otherwise the loop will become
+                    an infinite loop, leading to a logical error in the program.
+                </p>
+                <div class="syntax">
+                    Syntax of while loop is:
+                    <pre>
+while (test_condition):
+    body of while
+</pre>
+                </div>
+                <div class="code">
+                    <p>Let's understand this with the help of an example.
+                    </p>
+                    <pre>Print the first 5 natural numbers using while loop.
+<code>
+count = 1
+while count <= 5:
+ print(count)
+ count += 1
+</code>
+ Output:
+1
+2
+3
+4
+5
+</pre>
+                </div>
+            </section>
+        </section>
+        <section class="main-section" id="functions">
+            <header><h3>Functions</h3></header>
+            <p>Function
+                can be defined as a named group of instructions that
+                accomplish a specific task when it is invoked. Once
+                defined, a function can be called repeatedly from
+                different places of the program without writing all the
+                codes of that function everytime, or it can be called from
+                inside another function, by simply writing the name of
+                the function and passing the required parameters, if
+                any.</p>
+            <h5>The Advantages of Function</h5>
+            <ul>
+                <li>Increases readability, particularly for longer code
+                    as by using functions, the program is better
+                    organised and easy to understand.</li>
+                <li>Reduces code length as same code is not required
+                    to be written at multiple places in a program. This
+                    also makes debugging easier.</li>
+                <li>Increases reusability, as function can be called from
+                    another function or another program. Thus, we can
+                    reuse or build upon already defined functions and
+                    avoid repetitions of writing the same piece of code</li>
+                <li>Work can be easily divided among team members
+                    and completed in parallel. </li>
+            </ul>
+            <div class="syntax">
+                The syntax of Function is as follows:
+                <pre>
+def function_name (parameter1, parameter2,...):
+    set of instructions to be executed
+    return value
+</pre>
+            </div>
+            <div class="code">
+                <p>Let's understand it better with the help of an example. Following programme accepts 2 number from
+                    users, calculates the sum and displays the sum.</p>
+                <pre>
+<code>
+def addnum():
+ fnum = int(input("Enter first number: "))
+ snum = int(input("Enter second number: "))
+ sum = fnum + snum
+ print("The sum of ",fnum,"and ",snum,"is ",sum)
+
+#function call
+addnum()
+</code>
+</pre>
+                <p>In order to execute the function addnum(), we need
+                    to call it. The function can be called in the program by
+                    writing function name followed by () as shown in the
+                    last line of program.</p>
+                <pre>
+Output:
+Enter first number: 5
+Enter second number: 6
+The sum of 5 and 6 is 11
+</pre>
+            </div>
+        </section>
+        <section class="main-section" id="strings">
+            <header><h2>Strings</h2></header>
+            <p>String is a sequence which is made up of one or more
+                UNICODE characters. Here the character can be a letter,
+                digit, whitespace or any other symbol. A string can be
+                created by enclosing one or more characters in single,
+                double or triple quote.</p>
+            <div class="example">
+                <p>Some examples are: </p>
+                <pre>
+                <code>
+>>> str1 = 'Hello World!'
+>>> str2 = "Hello World!"
+>>> str3 = """Hello World!"""
+>>> str4 = '''Hello World!''
+</code>
+</pre>
+            </div>
+            <section class="topic">
+                <h3>String Operations</h3>
+                <p>As we know that string is a sequence of characters.
+                    Python allows certain operations on string data type,
+                    such as concatenation, repetition, membership and
+                    slicing. These operations are explained in the following
+                    subsections with suitable examples</p>
+                <section class="sub-topic">
+                    <h4>Concatenation</h4>
+                    <p>To concatenate means to join. Python allows us to join
+                        two strings using concatenation operator plus which is
+                        denoted by symbol +.</p>
+
+                    <div class="example">
+                        <pre>
+                        <code>
+>>> str1 = 'Hello' #First string
+>>> str2 = 'World!' #Second string
+>>> str1 + str2 #Concatenated strings
+'HelloWorld!'
+</code>
+</pre>
+                    </div>
+                </section>
+                <section class="sub-topic">
+                    <h4>Repetition</h4>
+                    <p>Python allows us to repeat the given string using
+                        repetition operator which is denoted by symbol *.</p>
+
+                    <div class="example">
+                        <pre><code>
+#assign string 'Hello' to str1
+>>> str1 = 'Hello' 
+#repeat the value of str1 2 times
+>>> str1 * 2 
+'HelloHello'
+#repeat the value of str1 5 times
+>>> str1 * 5 
+'HelloHelloHelloHelloHello'
+</code>
+</pre>
+                    </div>
+                </section>
+                <section>
+                    <h4>Membership</h4>
+                    <p>Python has two membership operators 'in' and 'not
+                        in'. The 'in' operator takes two strings and returns
+                        True if the first string appears as a substring in the
+                        second string, otherwise it returns False.</p>
+
+                    <div class="example">
+                        <pre><code>
+>>> str1 = 'Hello World!'
+>>> 'W' in str1
+True
+>>> 'Wor' in str1
+True
+>>> 'My' in str1
+False
+</code>
+</pre>
+                        <p>The 'not in' operator also takes two strings and
+                            returns True if the first string does not appear as a
+                            substring in the second string, otherwise returns False.</p>
+                        <pre>
+                        <code>
+>>> str1 = 'Hello World!'
+>>> 'My' not in str1 
+True
+>>> 'Hello' not in str1
+False
+</code>
+</pre>
+                    </div>
+                </section>
+                <section class="sub-topic">
+                    <h4>Slicing</h4>
+                    <p>In Python, to access some part of a string or substring,
+                        we use a method called slicing. This can be done by specifying an index range. Given a string
+                        str1, the
+                        slice operation str1[n:m] returns the part of the string
+                        str1 starting from index n (inclusive) and ending at m
+                        (exclusive). In other words, we can say that str1[n:m]
+                        returns all the characters starting from str1[n] till
+                        str1[m-1]. The numbers of characters in the substring
+                        will always be equal to difference of two indices m and
+                        n, i.e., (m-n).</p>
+                    <div class="example">
+                        <pre><code>
+                        >>> str1 = 'Hello World!'
+                        #gives substring starting from index 1 to 4
+                        >>> str1[1:5] 
+                        'ello'
+                        #gives substring starting from 7 to 9
+                        >>> str1[7:10] 
+                        'orl'
+                        #index that is too big is truncated down to
+                        #the end of the string
+                        >>> str1[3:20] 
+                        'lo World!' 
+                        #first index > second index results in an 
+                        #empty '' string
+                        >>> str1[7:2]
+                        </code>
+                        </pre>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
