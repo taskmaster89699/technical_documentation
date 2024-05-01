@@ -6,34 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-<nav id="navbar">
-<header><h1>Python</h1></header>
-<ul>
-<li>
-<a class="nav-link" href="#getting_started_with_python">Getting Started with Python</a>
-</li>
-<li>
-<a class="nav-link" href="#python_basics">Python Basics</a>
-</li>
-<li>
-<a class="nav-link" href="#flow_of_control">Flow of Control</a>
-</li>
-<li>
-<a class="nav-link" href="#functions">Functions</a>
-</li>
-<li>
-<a class="nav-link" href="#strings">Strings</a>
-</li>
-</ul>
-</nav>
-    <main id="main-doc">
-        <section class="main-section" id="getting_started_with_python">
-            <header><h2>Getting Started with Python</h2></header>
+<body class="bc-1">
+    <nav id="navbar" class="navbar">
+        <div class="head">
+            <h1>Python</h1>
+            <img src="/pylogo.png" alt="Python logo">
+        </div>
+        <ul>
+            <li>
+                <a class="nav-link" href="#getting_started_with_python">Getting Started with Python</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#python_basics">Python Basics</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#flow_of_control">Flow of Control</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#functions">Functions</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#strings">Strings</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc" class="bc-1">
+        <section class="main-section bc-1" id="getting_started_with_python">
+            <header>
+                <h2>Getting Started with Python</h2>
+            </header>
         </section>
-        <section class="sub-section">
+        <section class="sub-section bc-1">
             <ul>
                 <li>Python is a high level language. It is an interpreted language, as Python programs are executed by
                     an interpreter. The
@@ -46,70 +55,74 @@
                     using Python.</li>
             </ul>
         </section>
-        <section class="main-section" id="python_basics">
-            <header><h2>Python Basics</h2></header>
-            <section class="sub-section">
-                <section class="topic">
-                    <h3>Keywords</h3>
-                    <p>Keywords are reserved words. Each keyword has a
-                        specific meaning to the Python interpreter, and we can
-                        use a keyword in our program only for the purpose for
-                        which it has been defined. As Python is case sensitive,
-                        keywords must be written exactly as shown below: </p>
-                    <table class="keyword-table">
-                        <caption>Python Keywords</caption>
-                        <tr>
-                            <td>False</td>
-                            <td>class</td>
-                            <td>finally</td>
-                            <td>is</td>
-                            <td>return</td>
-                        </tr>
-                        <tr>
-                            <td>None</td>
-                            <td>continue</td>
-                            <td>for</td>
-                            <td>lambda</td>
-                            <td>try</td>
-                        </tr>
-                        <tr>
-                            <td>True</td>
-                            <td>def</td>
-                            <td>from</td>
-                            <td>nonlocal</td>
-                            <td>while</td>
-                        </tr>
-                        <tr>
-                            <td>and</td>
-                            <td>del</td>
-                            <td>global</td>
-                            <td>not</td>
-                            <td>with</td>
-                        </tr>
-                        <tr>
-                            <td>as</td>
-                            <td>elif</td>
-                            <td>if</td>
-                            <td>or</td>
-                            <td>yeild</td>
-                        </tr>
-                        <tr>
-                            <td>assert</td>
-                            <td>else</td>
-                            <td>import</td>
-                            <td>pass</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>break</td>
-                            <td>except</td>
-                            <td>in</td>
-                            <td>raise</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </section>
-                <section class="topic">
+        <section class="main-section bc-1" id="python_basics">
+            <header>
+                <h2>Python Basics</h2>
+            </header>
+            <section class="sub-section bc-1">
+                <div class="keywords">
+                    <section class="topic bc-1">
+                        <h3>Keywords</h3>
+                        <p>Keywords are reserved words. Each keyword has a
+                            specific meaning to the Python interpreter, and we can
+                            use a keyword in our program only for the purpose for
+                            which it has been defined. As Python is case sensitive,
+                            keywords must be written exactly as shown below: </p>
+                        <table class="keyword-table bc-1">
+                            <caption>Python Keywords</caption>
+                            <tr>
+                                <td>False</td>
+                                <td>class</td>
+                                <td>finally</td>
+                                <td>is</td>
+                                <td>return</td>
+                            </tr>
+                            <tr>
+                                <td>None</td>
+                                <td>continue</td>
+                                <td>for</td>
+                                <td>lambda</td>
+                                <td>try</td>
+                            </tr>
+                            <tr>
+                                <td>True</td>
+                                <td>def</td>
+                                <td>from</td>
+                                <td>nonlocal</td>
+                                <td>while</td>
+                            </tr>
+                            <tr>
+                                <td>and</td>
+                                <td>del</td>
+                                <td>global</td>
+                                <td>not</td>
+                                <td>with</td>
+                            </tr>
+                            <tr>
+                                <td>as</td>
+                                <td>elif</td>
+                                <td>if</td>
+                                <td>or</td>
+                                <td>yeild</td>
+                            </tr>
+                            <tr>
+                                <td>assert</td>
+                                <td>else</td>
+                                <td>import</td>
+                                <td>pass</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td>except</td>
+                                <td>in</td>
+                                <td>raise</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+                <section class="topic bc-1">
                     <h3>Identifiers</h3>
                     In programming languages, identifiers are names used
                     to identify a variable, function, or other entities in a
@@ -129,7 +142,7 @@
                             etc., in identifiers.</li>
                     </ul>
                 </section>
-                <section class="topic">
+                <section class="topic bc-1">
                     <h3>Variables</h3>
                     <p>Variable in Python refers to an object — an
                         item or element that is stored in the memory. Value
@@ -139,37 +152,40 @@
                         statement to create new variables and assign specific
                         values to them.
                     </p>
-                    <section class="example">
-                        <p>Below are some examples:</p>
-                        <pre>
+
+                    <p>Below are some examples:</p>
+                    <section class="example bc-1"></section>
+                    <pre>
                         gender = 'M'
                         message = "Keep Smiling"
                         price = 987.9
                         </pre>
-                    </section>
                 </section>
-
             </section>
+
         </section>
-        <section class="main-section" id="flow_of_control">
-            <header><h2>Flow of Control</h2></header>
+        </section>
+        <section class="main-section bc-1" id="flow_of_control">
+            <header>
+                <h2>Flow of Control</h2>
+            </header>
             <p>The order of execution of the statements in a program
                 is known as flow of control. The flow of control can be
                 implemented using control structures.
-            <section class="sub-topic">
+            <section class="sub-topic bc-1">
                 <h4>If Else Statement</h4>
                 In programming, this
                 concept of decision making or
                 selection is implemented with the
                 help of if..else statement. The syntax of if statement is:</p>
-                <div class="syntax">
+                <div class="syntax bc-1">
                     <pre>
 if condition:
  statement(s)
 else:
  statement(s)</pre>
                     <p>Let's see a code in action</p>
-                    <div class="code">
+                    <div class="code bc-1">
                         <pre>
 <code>
 age = int(input("Enter your age: "))
@@ -187,7 +203,7 @@ else:
                         its execution is dependent on the condition.</p>
                 </div>
             </section>
-            <section class="sub-topic">
+            <section class="sub-topic bc-1">
                 <h4>For Loop</h4>
                 <p>The for statement is used to iterate over a range of
                     values or a sequence. The for loop is executed for each
@@ -199,14 +215,14 @@ else:
                     within loop are not executed; the control
                     is then transferred to the statement
                     immediately following the for loop. </p>
-                <div class="syntax">
+                <div class="syntax bc-1">
                     Syntax of the for loop is:
                     <pre>
 for (control-variable) in (sequence/items in range):
     (statements inside body of the loop)
 </pre>
                 </div>
-                <div class="code">
+                <div class="code bc-1">
                     <p>Lets understand it with the help of a code.</p>
                     <pre>
 #Print even numbers in the given sequence
@@ -226,7 +242,7 @@ for num in numbers:
 </pre>
                 </div>
             </section>
-            <section class="sub-topic">
+            <section class="sub-topic bc-1">
                 <h4>While loop</h4>
                 <p>The while statement executes a block of code repeatedly
                     as long as the control condition of the loop is true. The
@@ -252,14 +268,14 @@ for num in numbers:
                     eventually becomes false; otherwise the loop will become
                     an infinite loop, leading to a logical error in the program.
                 </p>
-                <div class="syntax">
+                <div class="syntax bc-1">
                     Syntax of while loop is:
                     <pre>
 while (test_condition):
     body of while
 </pre>
                 </div>
-                <div class="code">
+                <div class="code bc-1">
                     <p>Let's understand this with the help of an example.
                     </p>
                     <pre>Print the first 5 natural numbers using while loop.
@@ -279,8 +295,10 @@ while count <= 5:
                 </div>
             </section>
         </section>
-        <section class="main-section" id="functions">
-            <header><h3>Functions</h3></header>
+        <section class="main-section bc-1" id="functions">
+            <header>
+                <h3>Functions</h3>
+            </header>
             <p>Function
                 can be defined as a named group of instructions that
                 accomplish a specific task when it is invoked. Once
@@ -305,7 +323,7 @@ while count <= 5:
                 <li>Work can be easily divided among team members
                     and completed in parallel. </li>
             </ul>
-            <div class="syntax">
+            <div class="syntax bc-1">
                 The syntax of Function is as follows:
                 <pre>
 def function_name (parameter1, parameter2,...):
@@ -313,7 +331,7 @@ def function_name (parameter1, parameter2,...):
     return value
 </pre>
             </div>
-            <div class="code">
+            <div class="code bc-1">
                 <p>Let's understand it better with the help of an example. Following programme accepts 2 number from
                     users, calculates the sum and displays the sum.</p>
                 <pre>
@@ -340,14 +358,16 @@ The sum of 5 and 6 is 11
 </pre>
             </div>
         </section>
-        <section class="main-section" id="strings">
-            <header><h2>Strings</h2></header>
+        <section class="main-section bc-1" id="strings">
+            <header>
+                <h2>Strings</h2>
+            </header>
             <p>String is a sequence which is made up of one or more
                 UNICODE characters. Here the character can be a letter,
                 digit, whitespace or any other symbol. A string can be
                 created by enclosing one or more characters in single,
                 double or triple quote.</p>
-            <div class="example">
+            <div class="example bc-1">
                 <p>Some examples are: </p>
                 <pre>
                 <code>
@@ -358,20 +378,20 @@ The sum of 5 and 6 is 11
 </code>
 </pre>
             </div>
-            <section class="topic">
+            <section class="topic bc-1">
                 <h3>String Operations</h3>
                 <p>As we know that string is a sequence of characters.
                     Python allows certain operations on string data type,
                     such as concatenation, repetition, membership and
                     slicing. These operations are explained in the following
                     subsections with suitable examples</p>
-                <section class="sub-topic">
+                <section class="sub-topic bc-1">
                     <h4>Concatenation</h4>
                     <p>To concatenate means to join. Python allows us to join
                         two strings using concatenation operator plus which is
                         denoted by symbol +.</p>
 
-                    <div class="example">
+                    <div class="example bc-1">
                         <pre>
                         <code>
 >>> str1 = 'Hello' #First string
@@ -382,12 +402,12 @@ The sum of 5 and 6 is 11
 </pre>
                     </div>
                 </section>
-                <section class="sub-topic">
+                <section class="sub-topic bc-1">
                     <h4>Repetition</h4>
                     <p>Python allows us to repeat the given string using
                         repetition operator which is denoted by symbol *.</p>
 
-                    <div class="example">
+                    <div class="example bc-1">
                         <pre><code>
 #assign string 'Hello' to str1
 >>> str1 = 'Hello' 
@@ -401,14 +421,14 @@ The sum of 5 and 6 is 11
 </pre>
                     </div>
                 </section>
-                <section>
+                <section class="bc-1">
                     <h4>Membership</h4>
                     <p>Python has two membership operators 'in' and 'not
                         in'. The 'in' operator takes two strings and returns
                         True if the first string appears as a substring in the
                         second string, otherwise it returns False.</p>
 
-                    <div class="example">
+                    <div class="example bc-1">
                         <pre><code>
 >>> str1 = 'Hello World!'
 >>> 'W' in str1
@@ -433,7 +453,7 @@ False
 </pre>
                     </div>
                 </section>
-                <section class="sub-topic">
+                <section class="sub-topic bc-1">
                     <h4>Slicing</h4>
                     <p>In Python, to access some part of a string or substring,
                         we use a method called slicing. This can be done by specifying an index range. Given a string
@@ -445,7 +465,7 @@ False
                         str1[m-1]. The numbers of characters in the substring
                         will always be equal to difference of two indices m and
                         n, i.e., (m-n).</p>
-                    <div class="example">
+                    <div class="example bc-1">
                         <pre><code>
                         >>> str1 = 'Hello World!'
                         #gives substring starting from index 1 to 4
